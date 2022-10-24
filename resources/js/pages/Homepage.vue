@@ -2,7 +2,7 @@
     <div>
         <HeaderComponent />
         <div class="100vw">
-            <div class="row">
+            <div class="row bg-light">
                 <div class="col-10 d-flex justify-content-center align-items-center flex-column">
                     <h1 class="internBoldText">BELANJA ACCESSORIS</h1>
                     <h1 class="internBoldText text-primary">TERLENGKAP DAN TERMURAH</h1>
@@ -15,7 +15,15 @@
                 </div>
             </div>
         </div>
-        <ProductListComponent :products="skills"></ProductListComponent>
+        <!-- <ProductCard imgUrl="/img/logo.png" contentText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum enim repellendus magni sapiente perspiciatis dignissimos optio, architecto sint voluptates eius, ea natus porro maxime eaque, officia itaque! Obcaecati, itaque perferendis!" /> -->
+        <div class="vw-100  p-3">
+            <div class="vw-90 me-5 ms-5">
+                <h1 class="my-3 fw-bold" >Trending Product</h1>
+                <ProductListComponent :products="skills"></ProductListComponent>
+            </div>
+        </div>
+        
+        
 
     </div>
 </template>
@@ -23,6 +31,7 @@
 <script>
 import HeaderComponent from "../components/header.vue";
 import ProductListComponent from "../components/ProductList.vue";
+
 export default {
     components: { HeaderComponent, ProductListComponent },
     data() {
@@ -57,7 +66,17 @@ export default {
                     name: 'Eclair',
                     required: 1,
                     vMode1: ''
-                }
+                },
+                {
+                    name: 'A',
+                    required: 1,
+                    vMode1: ''
+                },
+                {
+                    name: 'B',
+                    required: 1,
+                    vMode1: ''
+                },
             ]
         }
     }

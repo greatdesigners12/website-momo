@@ -1,19 +1,19 @@
 <template>
     <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
   <div class="container-fluid">
    
-    <img id="logoNavbar" src="/img/logo.png" class="logo-sm">
+    <h1>Momo</h1>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">List Product</a>
+          <a class="nav-link text-white" aria-current="page" href="#">List Product</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">About Us</a>
+          <a class="nav-link text-white" aria-current="page" href="#">About Us</a>
         </li>
       </ul>
       
